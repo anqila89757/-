@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>搜索结果</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<link href="css/fstyle.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/common.js"></script>
+
+	</head>
+	<body>
+		<div class="fiexd_top clearfix headBar1">
+			<a href="javascript:history.back();" class="headback"><img src="images/back.png" alt=""></a>
+			<div class="ss_search">
+			<div class="zz">
+			<a href="" class="ss_left_img"><img src="images/y_05.png" alt=""></a>
+			<input type="text" placeholder="毛绒"> 
+			<a href="" class="ss_right_img"><img src="images/y_06.png" alt=""></a>
+			</div>
+			</div> 
+		</div> 
+		<div class="w_fiexd_top2 w_iProclas_menu">
+			<ul class="clearfix">
+				<li class="active"><span>积木/拼插</span></li>
+				<li><span>电动/遥控</span></li>
+				<li><span>早教益智</span></li>
+				<li><span>过家家</span></li>
+				<li><span>模型/轨道</span></li>
+			</ul>
+		</div>
+		 <!--切换1-->
+		<div class="kz_list_main mt95 white_bg">
+			<ul class="w_iRecommend">
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+				</ul>
+		</div>
+		<!--切换1-->
+		<!--切换2-->
+		<div class="kz_list_main mt95 white_bg" style="display:none;">
+			<ul class="w_iRecommend">
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+				</ul>
+		</div>
+		<!--切换2-->
+	<script>
+		var liNum = $(".w_iProclas_menu ul li").length;
+		var parameter = 79;
+		$(".w_iProclas_menu ul").css("width",liNum*parameter);
+		$(".w_iProclas_menu ul li").click(function(){
+			var index=$(this).index();
+			$(".w_iProclas_menu ul li").removeClass("active");
+			$(this).addClass("active");
+			$(".kz_list_main").hide();
+			$(".kz_list_main:eq("+index+")").fadeIn();
+		});
+	</script>	
+		 
+	</body>
+</html>
+ 

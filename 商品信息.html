@@ -1,0 +1,303 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品信息</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<link href="css/fstyle.css" rel="stylesheet" type="text/css" />
+		<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+
+	</head>
+	<body>
+		<div class="fiexd_top clearfix headBar1">
+			<a href="#" onclick="javascript:history.back(-1);" class="w_itopBack"><img src="images/wx_18.png" /></a>
+			<p class="headhdtxt">商品详情</p>
+			<a href="#" class="w_prodtop_more"><img src="images/wx_24.png" /></a>
+		</div>
+		
+		<div class="w_iMain mt45 mb100">
+			<!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/wx_23.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/wx_23.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/wx_23.png" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+				<div class="w_iprodNum"><span>1</span>/<label>3</label></div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+				var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false,
+				autoHeight: true
+				});
+				/*
+				function autFun() {
+					var mW = $(".swiper-container").width();
+					var mBL = 1080 / 910;
+					$(".swiper-container .swiper-wrapper").css("height", mW / mBL);
+					$(".swiper-container .swiper-wrapper .swiper-slide img").css("width", mW);
+					$(".swiper-container .swiper-wrapper .swiper-slide img").css("height", mW / mBL);
+				}
+				setInterval(autFun, 1);*/
+				function Num(){
+					var index=parseInt($(".swiper-pagination-bullet-active").index());
+					var Num=index+1;
+					$(".w_iprodNum span").text(Num);
+					var Sum=$(".swiper-pagination span").length;
+					$(".w_iprodNum label").text(Sum);
+				}
+				setInterval(Num, 1);
+            </script>
+            <!--end banner -->
+			
+			<div class="w_prodetil_info">
+				<div class="w_prodName">哈士奇可爱方针狗狗毛绒玩具</div>
+				<div class="w_prodOther">产地：德国    材质：橡木</div>
+				<p class="w_prodInfo_line3">
+					<span class="w_redFont">日租价：￥2.1-3.9/天</span>
+					<label>吊牌价：￥269</label>
+				</p>
+				<div class="w_prodInfo_line4">
+					<ul>
+						<li class="w_blueBg w_whiteFont">畅玩/优惠卡日租</li>
+						<li>8折</li>
+					</ul>
+					<p>3~16岁</p>
+				</div>
+			</div>
+			<div class="w_prodetail_middle">
+				<ul>
+					<li>德国原产</li>
+					<li>安全保障</li>
+					<li>手眼锻炼</li>
+					<li>永恒经典</li>
+				</ul>
+				<div class="car_location white_bg clearfix">
+					<label class="car_loc_left">朝阳大屯路东</label>
+					<!--<span class="pull_right">0.8km</span>-->
+				</div>
+			</div>
+			
+			<div class="w_prodel_main">
+				<ul class="w_prodelM_ti">
+					<li class="w_prodTi_default">商品详情</li>
+					<li>用户评论</li>
+				</ul>
+				<!--商品详情-->
+				<div class="w_prodChange">
+					<ul class="w_prodelM_con">
+						<li>
+							<span>品牌：</span>
+							<label>乐高</label>
+						</li>
+						<li>
+							<span>产品型号：</span>
+							<label>E0061</label>
+						</li>
+						<li>
+							<span>玩具类型：</span>
+							<label>积木/拼插</label>
+						</li>
+						<li>
+							<span>重量：</span>
+							<label>3kg</label>
+						</li>
+						<li>
+							<span>包装尺寸：</span>
+							<label>30*40*50cm</label>
+						</li>
+						<li>
+							<span>配件数量：</span>
+							<label>25个</label>
+						</li>
+						<li>
+							<span>锻炼能力：</span>
+							<label>想象能力、观察能力、身体平衡</label>
+						</li>
+						<li>
+							<span>注意事项： </span>
+							<label>不要让小孩子把零件放在嘴里，达人陪同</label>
+						</li>
+					</ul>
+					<div class="w_prodlShow_img">
+						<img src="images/wx_25.png" />
+						<img src="images/wx_26.png" />
+					</div>
+				</div>
+				<!--商品详情-->
+				
+				<!--用户评价-->
+				<div class="w_prodChange" style="display:none;">
+					<ul class="w_prodComcon_ti">
+						<li>消毒彻底<p>（155）</p></li>
+						<li>国际品质<p>（155）</p></li>
+						<li>借还方便<p>（155）</p></li>
+						<li>经济环保<p>（155）</p></li>
+						<li>干净卫生<p>（155）</p></li>
+						<li>零件齐全<p>（155）</p></li>
+						<li>包装完好<p>（155）</p></li>
+						<li>服务贴心<p>（155）</p></li>
+						<li>消毒彻底<p>（155）</p></li>
+						<li>孩子喜欢<p>（155）</p></li>
+					</ul>
+					<div>
+						<!--each-->
+						<div class="w_61AddComment w_61AddCompage">
+							<div class="w_61AddCom_con">
+								<img src="images/wx_28.png" class="w_61ComHead"/>
+								<div class="w_61AddCom_con1">
+									<span>莉莉</span>
+									<label>2017.04.15</label>
+								</div>
+								<p class="w_prodComent_star">
+									<img src="images/wx_35.png" />
+									<img src="images/wx_35.png" />
+									<img src="images/wx_35.png" />
+									<img src="images/wx_35.png" />
+									<img src="images/wx_35.png" />
+								</p>
+								<!--<p class="w_62AddTime">2017.04.15</p>-->
+								<div class="w_61AddCom_con2">山地越野的感觉很不错，很刺激。场地布置也很给力， 是一次很不错的体验，五星好评！</div>
+								<ul class="w_62AddCom_img">
+									<li><div><img src="images/wx_29.jpg" /></div></li>
+									<li><div><img src="images/wx_30.jpg" /></div></li>
+									<li><div><img src="images/wx_31.jpg" /></div></li>
+									<li><div><img src="images/wx_32.jpg" /></div></li>
+									<li><div><img src="images/wx_33.jpg" /></div></li>
+									<li><div><img src="images/wx_34.jpg" /></div></li>
+								</ul>
+							</div>
+							<p class="w_prodCom_bot">
+								<a href="javascript:void(0);" class="w_comment"><img src="images/wx_37.png" alt="评论"/>（<span>152</span>）</a>
+								<a href="javascript:void(0);" class="w_zan"><img src="images/wx_36.png" alt="灰色赞" class="w_comGray"/><img src="images/wx_36a.png" alt="红色赞" class="w_comRed"/>（<span>152</span>）</a>
+							</p>
+						</div>
+						<!--each-->
+					</div>
+					<!-- 猜你喜欢 -->
+					<div class="think_like mt10">
+						<div class="title white_bg">
+							猜你喜欢
+						</div>
+						<div class="think_like_list">
+							<ul class="clearfix">
+								<li>
+									<a href="">
+										<div class="like_pro_box">
+											<div class="pro_img">
+											</div>
+											<div class="like_pro_name">哈士奇毛绒玩具哈士奇毛绒玩具</div>
+											<div class="like_zy_price">￥2元/天</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="like_pro_box">
+											<div class="pro_img">
+											</div>
+											<div class="like_pro_name">哈士奇毛绒玩具哈士奇毛绒玩具</div>
+											<div class="like_zy_price">￥2元/天</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="like_pro_box">
+											<div class="pro_img">
+											</div>
+											<div class="like_pro_name">哈士奇毛绒玩具哈士奇毛绒玩具</div>
+											<div class="like_zy_price">￥2元/天</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="like_pro_box">
+											<div class="pro_img">
+											</div>
+											<div class="like_pro_name">哈士奇毛绒玩具哈士奇毛绒玩具</div>
+											<div class="like_zy_price">￥2元/天</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 猜你喜欢 结束-->
+				</div>
+				<!--用户评价-->
+			</div>
+			
+		</div>
+		
+		<!-- 底部 -->
+        <div class="fiexd_bottom w_prodel_bottom">
+            <ul class="w_prodBot_left">
+				<li class="w_prod_collect"><a href="javascript:void(0);"><img src="images/wx_38.png" alt="收藏" class="w_readyCollect"/><img src="images/wx_38a.png" alt="收藏" class="w_overCollect"/><p>收藏</p></a></li>
+				<li class="w_prod_shopcar"><a href="javascript:void(0);"><img src="images/wx_39.png" alt="购物车"/><p>购物车</p></a></li>
+			</ul>
+			<ul class="w_prodBot_right">
+				<li><a href="#">立即支付</a></li>
+				<li><a href="#">抢先预订</a></li>
+			</ul>
+        </div>
+        <!--end 底部 -->
+		<script>
+			<!--切换-->
+			$(".w_prodelM_ti li").click(function(){
+				var index=$(this).index();
+				$(".w_prodelM_ti li").removeClass("w_prodTi_default");
+				$(this).addClass("w_prodTi_default");
+				$(".w_prodChange").hide();
+				$(".w_prodChange:eq("+index+")").fadeIn();
+			});
+			<!--praise-->
+			$(".w_zan").click(function(){
+				var zan_num=parseInt($(".w_zan span").text());
+				if($(".w_zan").hasClass("w_zanRed")){
+					$(".w_zan").removeClass("w_zanRed");
+					zan_num-=1;
+					$(".w_zan span").text(zan_num)
+					
+				}else{
+					$(".w_zan").addClass("w_zanRed");
+					zan_num+=1;
+					$(".w_zan span").text(zan_num)
+				}
+			});
+			
+			<!--collect-->
+			$(".w_prod_collect").click(function(){
+				if($(".w_prod_collect").hasClass("w_prod_collected")){
+					$(".w_prod_collect").removeClass("w_prod_collected");
+				}else{
+					$(".w_prod_collect").addClass("w_prod_collected");
+				}
+			});
+		</script>
+	</body>
+</html>

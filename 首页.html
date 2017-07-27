@@ -1,0 +1,301 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<link href="css/fstyle.css" rel="stylesheet" type="text/css" />
+		<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<body>
+		<div class="fiexd_top clearfix ">
+			<div class="w_itopBar">
+				<a href="#" class="w_itopLocate">北京朝阳区大屯路东</a>
+				<img src="images/wx_03.png" class="w_itopLing"/>
+			</div>
+			<div class="w_itopSer">
+				<input type="text" placeholder="可输入类别、品牌、名称、价格、距离" />
+				<img src="images/wx_04.png" class="w_itopSerflag"/>
+			</div>
+		</div>
+		
+		<div class="w_iMain mt98 mb100">
+			<!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/wx_05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/wx_05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/wx_05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/wx_05.png" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+				var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+				});
+				
+				function autFun() {
+					var mW = $(".swiper-container").width();
+					var mBL = 1084 / 450;
+					$(".swiper-container .swiper-wrapper").css("height", mW / mBL);
+					$(".swiper-container .swiper-wrapper .swiper-slide img").css("width", mW);
+					$(".swiper-container .swiper-wrapper .swiper-slide img").css("height", mW / mBL);
+				}
+				setInterval(autFun, 1);
+            </script>
+            <!--end banner -->
+			
+			<!--start 顶部分类-->
+			<ul class="w_itopMenu">
+				<li>
+					<a href="#"><div><img src="images/wx_06.png" /></div>
+					<p>积木/拼插</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_07.png" /></div>
+					<p>电动/遥控</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_08.png" /></div>
+					<p>模型/轨道</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_09.png" /></div>
+					<p>卡通/动漫</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_10.png" /></div>
+					<p>过家家</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_11.png" /></div>
+					<p>运动/锻炼</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_12.png" /></div>
+					<p>早教益智</p></a>
+				</li>
+				<li>
+					<a href="#"><div><img src="images/wx_13.png" /></div>
+					<p>更多</p></a>
+				</li>
+			</ul>
+			<!--end 顶部分类-->
+			
+			<!--start 小喇叭广播-->
+			<div class="txtScroll-top">
+				<div class="hd">
+					<a class="next"></a>
+					<ul></ul>
+					<a class="prev"></a>
+					<span class="pageState"></span>
+				</div>
+				<div class="bd">
+					<ul class="infoList">
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">您发布的动态有了新的评论</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">您发布的动态有了新的评论</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">数理化老师竟也看学习资料？</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">学英语送ipad2,45天突破听说</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">学外语，上北外！</a></li>
+						<li><!--<span class="date">2011-11-11</span>--><a href="#" target="_blank">那些无法理解的荒唐事</a></li>
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+			jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:1});
+			</script>
+			<!--end 小喇叭广播-->
+			
+			<!--strat 优惠入口-->
+			<div class="w_iMPrivilege">
+				<div class="w_iMprivTi">
+					<div>优惠入口</div>
+					<p>更多优惠在这等您</p>
+				</div>
+				<ul class="w_iMprivCon">
+					<li>
+						<!--<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>-->
+						<a href="#"><div class="w_iMprivCon1">
+							<p><img src="images/wx_15.png" /></p>
+							<em>打折玩具</em>
+						</div>
+						<div class="w_iMprivCon2">
+							<div>租金低至5折</div>
+							<p>数量有限，先租先享</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivCon1">
+							<p><img src="images/wx_16.png" /></p>
+							<em>免租时长</em>
+						</div>
+						<div class="w_iMprivCon2">
+							<div>0元租用</div>
+							<p>新到玩具，立即体验</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivCon1">
+							<p><img src="images/wx_16.png" /></p>
+							<em>赠代金券</em>
+						</div>
+						<div class="w_iMprivCon2">
+							<div>最高10元现金</div>
+							<p>点击试试您的运气</p>
+						</div></a>
+					</li>
+				</ul>
+			</div>
+			<!--end 优惠入口-->
+			
+			<!--特别推荐-->
+			<div class="w_iMPrivilege">
+				<div class="w_iMprivTi w_iRecomdTi">
+					<div>优惠入口</div>
+					<p>看看其他人看什么</p>
+					<a href="#">更多</a>
+				</div>
+				<ul class="w_iRecommend">
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+				</ul>
+			</div>
+			<!--特别推荐-->
+			
+			
+			<!--新到商品-->
+			<div class="w_iMPrivilege">
+				<div class="w_iMprivTi w_iRecomdTi w_iNewTi">
+					<div>新到商品</div>
+					<p>快来抢购新的玩具</p>
+					<a href="#">更多</a>
+				</div>
+				<ul class="w_iRecommend">
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="w_iMprivImg"><img src="images/wx_17.png" /></div>
+						<div class="w_iMprivInfo">
+							<div>哈士奇毛绒玩具哈士奇毛 绒玩具</div>
+							<p>￥2元/天</p>
+						</div></a>
+					</li>
+				</ul>
+			</div>
+			<!--新到商品-->
+			
+		</div>
+		
+		<!-- 底部 -->
+        <div class="fiexd_bottom">
+            <ul class="b_menuBox clearfix">
+            	<li class="pull_left active">
+            		<a href="">
+            			<img class="small_icon" src="images/b_menu1b.png" >
+            			<p>首页</p>
+            		</a>
+            	</li>
+            	<li class="pull_left">
+            		<a href="">
+            			<img class="small_icon" src="images/b_menu2g.png" >
+            			<p>找玩具</p>
+            		</a>
+            	</li>
+            	<li class="absolute_li">
+            		<a href="">
+            			<img class="scanning_icon" src="images/b_menu3.png" >
+            		</a>
+            	</li>
+            	<li class="pull_right">
+            		<a href="">
+            			<img class="small_icon" src="images/b_menu5g.png" >
+            			<p>我的</p>
+            		</a>
+            	</li>
+            	<li class="pull_right">
+            		<a href="">
+            			<img class="small_icon" src="images/b_menu4g.png" >
+            			<p>购物车</p>
+            			<!--<em class="car_num">1</em>-->
+            		</a>
+            	</li>
+            	
+            </ul>
+        </div>
+        <!--end 底部 -->
+	</body>
+</html>
